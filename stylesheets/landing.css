@@ -1,0 +1,32 @@
+#landing h1 {
+  font-size: 8em;
+}
+
+#landing h2 {
+  color: var(--slate);
+}
+
+#landing-text {
+  width: 45%;
+}
+
+@media (max-width: 576px) {
+  #landing-text {
+    width: 100%;
+  }
+
+  #landing h1 {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  #landing-text {
+    width: 75%;
+    white-space: nowrap;
+  }
+
+  #landing h1 {
+    font-size: 5em;
+  }
+}
