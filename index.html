@@ -16,11 +16,11 @@
     />
     <link rel="stylesheet" href="./stylesheets/styles.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>tanli</title>
+    <title>tanli - Developer Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid d-sm-none d-lg-block">
-      <!-- Navbar start -->
+    <div class="container-fluid d-none d-md-block">
+      <!-- Navbar start  -->
       <nav class="nav position-fixed" id="navigation">
         <ul class="nav flex-column text-right font-weight-bolder">
           <li class="nav-item text-secondary">
@@ -41,16 +41,19 @@
     <!-- Navbar end -->
 
     <!-- Landing page start -->
-    <section id="landing" class="min-vh-100">
-      <div class="p-5 text-wrap" id="landing-text">
-        <h1 class="text-nowrap">
-          hello world <span class="blink text-purple">|</span>
-        </h1>
-        <h2 class="text-justify text-slate">
-          I'm <span class="text-purple">Stanley</span>, a first-year student
-          treading the first steps of
-          <span class="text-purple">computer science</span>.
-        </h2>
+    <section id="landing">
+      <div class="d-flex flex-column align-items-center align-items-lg-start">
+        <div class="landing-heading">
+          <h1 class="">hello world <span class="blink text-purple">|</span></h1>
+        </div>
+
+        <div class="landing-description">
+          <h2 class="text-slate text-sm-center text-justify text-lg-left">
+            I'm <span class="text-purple">Stanley</span>, a first-year student
+            treading the first steps of
+            <span class="text-purple">computer science</span>.
+          </h2>
+        </div>
       </div>
     </section>
     <!-- Landing page end-->
@@ -58,12 +61,12 @@
     <!-- About section start -->
     <section id="about" class="min-vh-100 py-5">
       <div class="section-header">
-        <h1 class="font-weight-bold col mb-5">/ about me</h1>
+        <h1 class="font-weight-bold col mb-2 mb-sm-5">/ about me</h1>
       </div>
       <!-- about container start -->
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <p class="text-justify">
               My name's <strong>John Stanley T. Altonaga</strong>, an 18-year
               old currently studying
@@ -71,7 +74,7 @@
               >.
             </p>
 
-            <p>
+            <p class="text-justify">
               I have a profound interest in
               <span class="text-purple font-weight-bold">machine-learning</span>
               and other AI-powered programs, as well as the overall advancements
@@ -79,27 +82,27 @@
               things and enjoy <strong>thinking on my feet</strong>.
             </p>
 
-            <p>
+            <p class="text-justify">
               I like to spend my <strong>pastimes</strong> immersing myself in
               various forms of
               <span class="text-purple font-weight-bold">media</span>
               such as video games, literature, shows, etc.
             </p>
 
-            <p>
+            <p class="text-justify">
               Here are some <strong>technologies</strong> I am currently
               studying:
             </p>
-            <ul class="list-unstyled ml-2">
+            <ul class="list-unstyled ml-md-2">
               <li>Python</li>
               <li>C</li>
               <li>HTML & CSS</li>
               <li>JavaScript</li>
             </ul>
           </div>
-          <div class="ml-5 col-4 col-md-0 rounded-circle">
+          <div class="ml-2 ml-lg-5 col-0 col-md col-lg-4 rounded-circle">
             <img
-              class="w-100 bounce d-lg-block d-sm-none"
+              class="w-100 bounce d-none d-md-block"
               src="./images/pic1.jpg"
             />
           </div>
@@ -110,7 +113,7 @@
     <!-- About section start -->
 
     <!-- Gallery section start -->
-    <section id="gallery" class="min-vh-100 py-5">
+    <section id="gallery" class="py-0 py-md-5">
       <div class="section-header">
         <h1 class="font-weight-bold col mb-5">/ favorite-resources</h1>
       </div>
@@ -130,7 +133,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner w-100 p-5 p-sm-0">
+          <div class="carousel-inner w-100 p-sm-0">
             <div class="carousel-item active">
               <img
                 src="https://cdn-media-1.freecodecamp.org/ghost/2019/01/cs50.png"
@@ -187,12 +190,13 @@
     <!-- Gallery section end -->
 
     <!-- Contact form section start-->
+
     <section id="contact-form" class="min-vh-100 py-5">
-      <div class="ml-0 ml-sm-5 section-header">
-        <h1 class="font-weight-bold col mb-5">/ get-in-touch</h1>
+      <div class="section-header">
+        <h1 class="font-weight-bold mb-5">/ get-in-touch</h1>
       </div>
       <!-- Contact form container start -->
-      <div class="container-fluid mt-3 p-3 col-xl-4 col-md-8 bg-transparent">
+      <div class="container-fluid p-3 col col-lg-8 col-xl-6 bg-transparent">
         <div class="row justify-content-center">
           <div class="col-12">
             <form>
@@ -202,6 +206,7 @@
                   class="form-control border-bottom-1"
                   id="name"
                   placeholder="Name"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -210,6 +215,7 @@
                   class="form-control"
                   id="email"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -218,6 +224,7 @@
                   class="form-control"
                   id="contact_no"
                   placeholder="Contact Number"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -226,14 +233,15 @@
                   id="message"
                   rows="4"
                   placeholder="How can I help?"
+                  required
                 ></textarea>
               </div>
 
               <button
-                type="button"
+                type="submit"
                 class="btn btn-custom"
                 data-toggle="modal"
-                data-target="#send"
+                data-target="#staticBackdrop"
               >
                 Send
               </button>
@@ -244,6 +252,7 @@
       <!-- Contact form container end -->
     </section>
     <!-- Contact form section end-->
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -23,13 +23,7 @@ body {
   font-family: "NTR", sans-serif;
   background-color: var(--soft-black);
   color: var(--white);
-  padding: 15% 15% 0 15%;
-}
-
-@media (max-width: 576px) {
-  body {
-    padding: 0;
-  }
+  padding: 16.5% 15% 0 15%;
 }
 
 .text-purple {
@@ -38,4 +32,16 @@ body {
 
 .text-slate {
   color: var(--slate);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5%;
+  }
 }

@@ -1,32 +1,36 @@
+#landing {
+  padding-top: 10%;
+  min-height: 100vh;
+}
+
 #landing h1 {
-  font-size: 8em;
+  font-size: 7em;
 }
 
 #landing h2 {
   color: var(--slate);
 }
 
-#landing-text {
-  width: 45%;
-}
-
-@media (max-width: 576px) {
-  #landing-text {
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  #landing {
+    min-height: 72.5vh;
   }
 
-  #landing h1 {
-    font-size: 6em;
+  #landing .landing-description {
+    padding: 0 10%;
   }
 }
 
-@media (max-width: 768px) {
-  #landing-text {
-    width: 75%;
-    white-space: nowrap;
+@media only screen and (max-width: 600px) {
+  #landing {
+    min-height: 40vh;
   }
 
-  #landing h1 {
-    font-size: 5em;
+  #landing .landing-heading {
+    font-size: 12px;
+  }
+
+  #landing .landing-description {
+    padding: unset;
   }
 }
