@@ -26,8 +26,8 @@
     min-height: 40vh;
   }
 
-  #landing .landing-heading {
-    font-size: 12px;
+  #landing h1 {
+    font-size: 4em;
   }
 
   #landing .landing-description {

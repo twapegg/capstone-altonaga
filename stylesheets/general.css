@@ -18,6 +18,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "NTR", sans-serif;
   background-color: var(--soft-black);
