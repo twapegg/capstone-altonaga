@@ -1,6 +1,7 @@
 #contact-form {
   margin-top: 5%;
 }
+
 #contact-form input {
   background-color: transparent;
   border: none;
@@ -8,6 +9,7 @@
   color: var(--lightest-slate);
   font-size: 26px;
 }
+
 #contact-form input::placeholder {
   color: var(--slate);
   font-size: 26px;
@@ -18,6 +20,7 @@
   box-shadow: 0 0 5px var(--light-purple);
   color: var(--lightest-slate);
 }
+
 #contact-form input:focus::placeholder {
   color: transparent;
 }
@@ -37,8 +40,9 @@
 }
 
 #contact-form textarea:focus::placeholder {
-  color: var(--lightest-slate);
+  color: transparent;
 }
+
 #contact-form textarea:focus {
   border-bottom: 3px solid var(--light-purple);
   border-right: 3px solid var(--light-purple);
@@ -64,9 +68,6 @@
 
 #contact-form .form-group {
   margin-bottom: 12.5%;
-}
-
-@media (max-width: 576px) {
 }
 
 @media (max-width: 768px) {

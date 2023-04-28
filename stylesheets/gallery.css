@@ -5,6 +5,7 @@
 .carousel {
   max-width: 90%;
 }
+
 .carousel-inner {
   border-radius: 24px;
   box-shadow: 0px 0px 10px -8px rgba(0, 0, 0, 0.6);
@@ -14,8 +15,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1.5%;
+  padding: 0 1%;
   background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
 
 .carousel img {
@@ -24,16 +26,19 @@
 }
 
 .carousel #img1 {
-  object-position: 0px 35%;
+  object-position: 0% 35%;
 }
+
 .carousel #img2 {
   object-position: 50% 40%;
 }
+
 .carousel #img3 {
-  object-position: 80% 35%;
+  object-position: 90% 35%;
 }
+
 .carousel #img4 {
-  object-position: 40% 30%;
+  object-position: 40% 40%;
 }
 
 #gallery h3 {
