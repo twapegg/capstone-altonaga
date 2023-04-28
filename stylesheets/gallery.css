@@ -1,11 +1,39 @@
-#gallery
-{
+#gallery {
   min-height: 100vh;
 }
 
+.carousel {
+  max-width: 90%;
+}
 .carousel-inner {
   border-radius: 24px;
   box-shadow: 0px 0px 10px -8px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel img {
+  height: 550px;
+  object-fit: cover;
+}
+
+.carousel #img1 {
+  object-position: 0px 35%;
+}
+.carousel #img2 {
+  object-position: 50% 40%;
+}
+.carousel #img3 {
+  object-position: 80% 35%;
+}
+.carousel #img4 {
+  object-position: 40% 30%;
 }
 
 #gallery h3 {
@@ -15,6 +43,10 @@
 @media only screen and (max-width: 768px) {
   #gallery {
     min-height: 72.5vh;
+  }
+
+  .carousel {
+    max-width: 100%;
   }
 }
 
