@@ -69,14 +69,3 @@
 #contact-form .form-group {
   margin-bottom: 12.5%;
 }
-
-@media (max-width: 768px) {
-  #landing-text {
-    width: 75%;
-    white-space: nowrap;
-  }
-
-  #landing h1 {
-    font-size: 5em;
-  }
-}
